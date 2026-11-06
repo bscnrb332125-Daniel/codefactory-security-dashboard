@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import AttackTechnique, Finding, Mitigation, Pillar
+
+admin.site.register(Pillar)
+admin.site.register(AttackTechnique)
+admin.site.register(Finding)
+admin.site.register(Mitigation)
